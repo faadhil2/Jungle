@@ -5,6 +5,10 @@
   </header>
 
   <div class="panel panel-default items">
+
+  <% if enhanced_cart.any? %>
+
+
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -49,4 +53,12 @@
     </div>
   </div>
 
+<%else%>
+<div>
+<p>Sorry, it looks like your cart is empty. Please return to the <a href="/">product page </a>to add more items
+to your cart.</p>
+
+</div>
+
+  <% end %>
 </section>
