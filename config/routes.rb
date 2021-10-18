@@ -74,4 +74,23 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  # GifVault::Application.routes.draw do
+
+    # root to: 'gif#cool'
+  
+    # these routes are for showing users a login form, logging them in, and logging them out.
+    get '/login' => 'sessions#new'
+    post '/login' => 'sessions#create'
+    get '/logout' => 'sessions#destroy'
+  
+    get '/signup' => 'users#new'
+    post '/users' => 'users#create'
+    
+  # end
+
+
+
+
+
 end
